@@ -1,0 +1,136 @@
+.emailCompose{
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    min-width: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(51 51 51/59%);
+    border-radius: 8px 8px 0px 0px ;
+}
+
+.compose__header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(42, 41, 41);
+    color: white;
+    align-items: center;
+    padding: 7px 15px;
+    
+  
+}
+
+
+.composehr_lef span{
+    font-size: 16px;
+}
+
+.composehr__right{
+    display: flex;
+    align-items: center;
+}
+
+/* .composehr_lef{
+    display: flex;
+    align-items: center;
+
+} */
+
+.compose__header .composehr__right svg{
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 0.2s linear 0s;
+    padding: 3px;
+
+}
+
+
+
+
+
+.compose__header .composehr__right svg:hover{
+    background-color: rgb(149, 148, 148);
+    cursor: pointer;
+}
+
+.compose__body{
+    display: flex;
+}
+
+.composebody_form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.composebody_form input, textarea{
+    outline: 0;
+    height: 40px;
+    border: 0px;
+    box-shadow: inset 0 -1px 0 0 rgb(100 121 143/12%);
+    padding: 0px 10px;
+}
+
+.composebody_form textarea{
+    height: auto;
+}
+
+.compose__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+
+.composefooter__left button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(3, 109, 175);
+    outline: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 0px 0px 0px 15px !important;
+  
+     transition: all ease 0.2s;
+   
+
+
+}
+
+.composefooter__left button:active{
+    color: brown;
+    opacity: 2;
+    scale: 0.9;
+}
+
+
+
+
+.composefooter__left button svg{
+    border-left: 1px solid rgb(9, 0, 0);
+    margin-left: 15px;
+    padding: 6px 2px 6px 2px;
+}
+
+.composefooter__right svg{
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color: rgb(160, 158, 158);
+    padding: 3px;
+    transition: 0.2 linear 0s;
+    cursor: pointer;
+}
+
+
+.composefooter__right svg:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+

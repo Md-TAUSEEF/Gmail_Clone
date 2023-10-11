@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Compose from "./Component/Compose";
+import Emaillist from "./Component/Emaillist";
+import { useSelector } from "react-redux";
+import Header from "./Component/Header";
+import Sidebar from "./Component/Sidebar";
+import { selectSendMessageIsOpen } from "./Component/fature/mailSlice";
+import Emailbodyaction from "./Component/Emailbodyaction";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from "./Component/Login";
+import { selectuser } from './Component/fature/useSlice';
+import Speech from "./Component/Speech";
 
 function App() {
+  const isMessageOpen = useSelector(selectSendMessageIsOpen); // Corrected function name
+  const user=useSelector(selectuser)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router>
+    {
+      user ? (<div>
+      <Header />
+      <div className="app__body">
+      
+        <Sidebar />
+        <Routes>
+        
+        <Route exact path="/Emailbodyaction" element={<Emailbodyaction/>}/>
+        <Route exact path="/inbox" element={<Emaillist/>}></Route>
+        <Route exact path="/Speech" element={<Speech/>}></Route>
+       
+        </Routes>
+      </div>
+
+      {isMessageOpen && <Compose/>}
+    </div>) :
+      
+     (<Login/>)
+    }
+    
+    </Router>
   );
+  
 }
 
 export default App;

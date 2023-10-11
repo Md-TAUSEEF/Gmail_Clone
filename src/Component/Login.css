@@ -1,0 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+.body1{
+    height: 100vh;
+    background: url("../Component/Image/khan.jpg");
+    background-size: cover; 
+    background-position: top;
+    display: flex;
+    justify-content: center;
+}
+.loginwrapper{
+    margin-top: 100px;
+    display: flex;
+    max-height: 300px;
+    border-radius: 10px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    max-width: 500px;
+    background: linear-gradient(to left,rgba(255, 255, 255, 0.8)40%,rgba(209, 209, 209, 0.8)60%);
+}
+
+.loginwrapper login{
+    border-radius: 8px;
+    width: 350px;
+    background-color: whitesmoke;
+    padding: 4px;
+    max-width: 551px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginwrapper button{
+    margin-top: 50px;
+    padding: 20px;
+    font-size: larger;
+    width: 400px;
+    font-weight: bold;
+}
+
+.login img{
+    height: 50px;
+    width: 250px;
+}
+
+.gmail_login{
+    background-color: #ff7200;
+    border: 0;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.gmail_login:hover{
+    background-color: rgb(8, 132, 209);
+    color: black;
+    font-weight: bold;
+}
+
+ 

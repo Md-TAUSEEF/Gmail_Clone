@@ -1,0 +1,120 @@
+.emailcnt{
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.emailop{
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+    padding: 0px 10px;
+    cursor: pointer;
+   
+}
+
+.emailop p{
+    font-size: 15px;
+    color: rgb(95, 94, 94);
+}
+
+.emailop svg{
+    margin: 2px;
+    font-size: 20px;
+    color: gray;
+}
+
+.emailop:hover{
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.emailop--active{
+    border-bottom: 1px solid #d93025 !important;
+}
+
+.emailop--active p{
+    color: #0f0100 !important;
+    font-weight: bold;
+}
+
+.emailop--active svg{
+    color: #d93025;
+    font-weight: bold;
+}
+
+.emailbody{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0px 10px;
+    height: 40px;
+
+}
+
+.emailbody__left{
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex: 20%;
+
+}
+
+.emailbody__mid{
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex: 90%;
+}
+
+.emailbody__right{
+    
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex: 10%;
+    text-align: right;
+    justify-content: flex-end;
+
+}
+
+.emailbody:hover{
+    background-color: whitesmoke;
+    color: gray;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(208, 206, 206) ;
+}
+.emailbody__left svg{
+    font-size: 16px;
+   color: #575555;
+
+    margin: 4px;
+}
+
+.emailbody__left h4{
+    color: #575555;
+    font-size: 16px;
+
+}
+.emailbody__left p{
+    font-size: 12px;
+    
+}
+.emailbody__mid p{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0px 20px;
+    max-width: 600px;
+}
+.emailbody_msg{
+    display: flex;
+    align-items: center;
+    flex: 90%;
+}
+
+.emaillist {
+    width: 90%;
+}
